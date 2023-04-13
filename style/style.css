@@ -1,3 +1,12 @@
+/* Mise en forme générale */
+/* Régine Tournoud le 13/04//2023 */
+
+/* HEADER */
+/* BODDY */
+/* FOOTER */
+
+
+
 
 /* Mise en forme générale */
 @font-face {
@@ -14,7 +23,7 @@
 }
 
 h1{
-    /* uppercase */
+  
     text-align: center;
     text-transform:uppercase;
 }
