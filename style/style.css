@@ -1,0 +1,210 @@
+
+/* Mise en forme générale */
+@font-face {
+    font-family: 'LiberationSans';
+    src: url('./Assets/fonts/LiberationSans-Regular-webfont.ttf');
+    src: url('./Assets/fonts/LiberationSans-Bold-webfont.ttf');
+}
+
+*{ font-family: LiberationSans, Helvetica, sans-serif;}
+
+.main{
+    width : 80%;
+    margin: auto;
+}
+
+h1{
+    /* uppercase */
+    text-align: center;
+    text-transform:uppercase;
+}
+
+h2{
+color:white;
+font-weight: normal;
+
+}
+
+/* Mise en forme des sections principales */
+
+/* HEADER */
+header{
+background-color: rgb(244, 244, 244);
+ }
+ 
+ header p {
+    font-weight: bold;
+    color:#4a4a4a;
+ }
+ /* mise en orange du span à revoir */
+ header p span{color:rgb(255 192 0);}
+
+ .navGauche {
+     text-align: center;
+     margin:20px;
+     
+    }
+
+.navDroite {
+    text-align: right;
+    margin:20px;
+}  
+    
+@media only screen and (min-width: 576px) {
+        header{
+            width:80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        justify-content: space-between;}
+    }
+
+/* BODY */
+body{
+    background-color: black;
+}
+
+#mainPhoto{
+    width:100%;
+}
+
+.mainProduits{
+background-color: rgb(244, 244, 244);
+margin:auto;
+}
+
+
+
+.Produit{
+    width : 80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 30px;
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
+}
+
+.Produit img {
+    width: auto;
+}
+@media only screen and (min-width: 576px) {
+    .mainProduits{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Produit{
+        width : auto}
+}
+
+.Produit button{
+    width:40% ;
+    color: rgb(244, 244, 244);
+    background-color: black;
+}
+
+.ProduitDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+
+}
+.reduction{
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    color:rgb(255 192 0);
+    
+    right: -40px;
+    font-size: 2em;
+}
+
+.oldPrix{
+    font-weight: bold;
+    color :black;
+    text-decoration: line-through ;
+    /* si j'ai le temps symbole euro */
+}
+.newPrix{
+    font-weight: bold;
+    color :rgb(255 192 0);
+    text-decoration: line-through ;
+}
+
+/* FOOTER */
+footer{
+    background-color: #373737;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;align-items: center;
+}
+
+
+#menutop {
+    position: absolute;
+    top: -40px;
+    Height: 30px;
+    display: flex;
+    background-color: white ;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content:space-around ;
+    flex-direction: row;
+}
+
+.gallerieServices {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 80px;
+
+}
+
+.service{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.interligne{
+    width:70%;
+    color: red;
+}
+.reseauSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : 20%;
+}
+
+.juridique{
+    color:white;
+}
+
+
+
+@media only screen and (min-width: 576px) {
+    #menutop {
+        width: 40%;
+
+    }
+    .gallerieServices {
+        width: 80%;
+        flex-direction:row ;
+
+    }
+    .service{
+        width: 25%;}
+}
