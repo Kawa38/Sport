@@ -49,6 +49,16 @@ background-color: rgb(244, 244, 244);
     text-align: right;
     margin:20px;
 }  
+
+.navDroite nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navDroite a{
+    margin :10px;
+}
     
 @media only screen and (min-width: 576px) {
         header{
@@ -87,7 +97,7 @@ margin:auto;
     padding: 50px;
 }
 
-.Produit img {
+.imageProduit {
     width: auto;
 }
 @media only screen and (min-width: 576px) {
@@ -134,7 +144,6 @@ margin:auto;
 .newPrix{
     font-weight: bold;
     color :rgb(255 192 0);
-    text-decoration: line-through ;
 }
 
 /* FOOTER */
